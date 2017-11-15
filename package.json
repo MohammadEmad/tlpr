@@ -1,0 +1,48 @@
+{
+  "name": "nms-program",
+  "version": "0.0.0",
+  "repository": "https://github.com/anthony/nms-program",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --inline --debug --devtool eval --hot --content-base app",
+    "lint": "./node_modules/.bin/eslint --config ./.eslintrc ./app || true",
+    "build": "./node_modules/.bin/webpack --optimize-minimize --optimize-occurence-order --progress"
+  },
+  "devDependencies": {
+    "css-loader": "~0.23.1",
+    "eslint": "~2.5.3",
+    "eslint-config-angular": "~0.5.0",
+    "eslint-plugin-angular": "~1.0.0",
+    "html-loader": "~0.4.3",
+    "html-webpack-plugin": "~2.15.0",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "ng-annotate-loader": "~0.1.0",
+    "style-loader": "~0.13.1",
+    "webpack": "~1.12.14",
+    "webpack-dev-server": "~1.14.1"
+  },
+  "dependencies": {
+    "angular": "~1.5.3",
+    "angular-animate": "~1.5.9",
+    "angular-aria": "~1.5.9",
+    "angular-daterangepicker": "^0.2.3-alpha1",
+    "angular-drag-and-drop-lists": "^1.4.0",
+    "angular-local-storage": "^0.5.0",
+    "angular-material": "~1.1.1",
+    "angular-moment": "^1.0.0",
+    "angular-toastr": "^2.1.1",
+    "angular-ui-router": "~0.2.18",
+    "file-loader": "~0.8.4",
+    "jquery": "^3.1.1",
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3",
+    "lodash": "~4.6.1",
+    "moment": "^2.15.1",
+    "ng-confirm": "^1.1.0",
+    "ng-file-upload": "^12.2.13",
+    "nms-modules": "0.0.7",
+    "restangular": "~1.5.1",
+    "url-loader": "~0.5.6"
+  }
+}
